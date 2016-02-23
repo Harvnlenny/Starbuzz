@@ -16,7 +16,11 @@ class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL("CREATE TABLE DRINK ("
+            + "_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + "NAME TEXT, "
+            + "DESCRIPTION TEXT, "
+            + "IMAGE_RESOURCE_ID INTEGER);");
     }
 
     @Override

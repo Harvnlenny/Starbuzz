@@ -28,4 +28,5 @@
         android:id="@+id/favorite"
         android:text="@string/favorite"
         android:onClick="onFavoriteClicked" />
+
 </LinearLayout>
